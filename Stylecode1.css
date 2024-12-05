@@ -1,0 +1,315 @@
+@media only screen and (min-width: 640px) {
+    html{
+        scroll-behavior: smooth;
+    }
+
+body{
+    color: aliceblue;
+}
+.page{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-rows: 50px 4fr 50px;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    
+}
+
+main{
+    
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+#Intro{
+    grid-row: 2 / 4; 
+    border-radius: 10px;
+    background-image: url(/Web-Proj/MyPortfolio_Grid/Scources/wp1933983.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#Intro h1{
+    padding-top: 120px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#About{
+    grid-row: 4 / 6;
+    height: 350px;
+   
+    /* margin: auto;
+    width: 100%;  */
+   text-align: center;
+}
+#About h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+
+header{
+    grid-row: 1/2;
+    background-color:rgb(117, 23, 23) ;
+}
+.header{
+    
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    border-radius: 10px;  
+}
+
+
+.header nav ul {
+    grid-template-columns: repeat(5,50px) ;
+    grid-row: 1fr;
+    column-gap: 10px;
+    display: grid;
+    justify-content: center; 
+    /* align-items: center;  */
+    /* height: 30px; 
+    margin-bottom: 5px;
+    padding: 0px; */
+}
+.header nav ul li{
+    grid-row: 1/2;
+    list-style: none;
+}
+
+/* .header li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-size: 20px;
+    color: aliceblue;
+    
+    
+} */
+
+footer{
+    grid-row: 6 / 7;
+    background-color:rgb(117, 23, 23) ;
+    justify-content: center;
+    height: 50px;
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+.Bar{
+    border: 2px solid rgb(117, 23, 23);
+    width: 30%;
+}
+
+.My-Works{
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(117, 23, 23);
+    padding: 35px 20px;
+    margin-top: 30px;
+    width: 15%;
+    height: 80px;
+    /* height: 180px;مع صورة بدك تختار هذا */
+    /* margin: 0.5%; */
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 1px 0 rgba(0, 0, 0, 0.5);
+} 
+
+.My-Works h3{
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+
+/* .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all 0.5s ease;
+  }
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #063146;
+    user-select: none;
+  }
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+  }
+  ul li:hover a {
+    padding-left: 50px;
+  }
+  .sidebar ul a i {
+    margin-right: 16px;
+  }
+
+  #check {
+    display: none;
+  }
+  label #btn,
+  label #cancel {
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 1px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s;
+  }
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+  }
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel {
+    left: 195px;
+  }
+  #check:checked ~ section {
+    margin-left: 250px;
+  } */
+
+/* *****************Side Bar mune*********************/
+/* $toggleSize: 40px;
+$toggleMargin: 10px;
+$toggleLine: 4px;
+$toggleColor: red;
+
+.nav-container {
+  position: relative;
+  display: inline-block;
+  max-width: $toggleSize + $toggleMargin;
+  max-height: $toggleSize + $toggleMargin;
+  overflow: visible;
+  outline: none;
+  
+  //&:focus-within, &:focus {
+  &.is-active {
+    .nav-toggle {
+      &:before, &:after {
+        box-shadow: none;
+      }
+      
+      &:before {
+        transform: rotate(-45deg);
+      }
+      
+      &:after {
+        transform: rotate(45deg);
+      }
+    }
+    
+    .nav-items {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .nav-toggle {
+    $offset: $toggleSize * 0.5;
+    
+    position: relative;
+    width: $toggleSize;
+    height: $toggleSize;
+    margin: $toggleMargin;
+    z-index: 2;
+    
+    &:hover {
+      cursor: pointer;
+    }
+      
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      top: #{$offset - $toggleLine / 2};
+      left: 0;
+      transform: translate(0, 0);
+      width: 100%;
+      height: $toggleLine;
+      background: $toggleColor;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    
+    &:before {
+      box-shadow: 0 #{$offset / 1.5} 0 0 $toggleColor;
+    }
+    
+    &:after {
+      box-shadow: 0 #{-$offset / 1.5} 0 0 $toggleColor;
+    }
+  }
+  
+  .nav-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 300px;
+    max-width: 50vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding: 80px 20px 20px 10px;
+    transition: transform .3s ease;
+    transform: translate(calc(-100% - 50px), 0);
+    background: #EFEFEF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px 0;
+    align-content: start;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    
+    .nav-item {
+      background: darken(#EFEFEF, 5%);
+      padding: 10px;
+      transition: background-color .3s ease;
+      
+      &:hover {
+        cursor: pointer;
+        background: darken(#EFEFEF, 10%);
+      }
+    }
+  }
+}
+
+*/
+} 
