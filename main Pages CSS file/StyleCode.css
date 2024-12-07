@@ -23,7 +23,7 @@ main{
 #Intro{
     grid-row: 2 / 4; 
     border-radius: 10px;
-    background-image: url(../wp1933983.webp);
+    background-image: url(wp1933983.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
