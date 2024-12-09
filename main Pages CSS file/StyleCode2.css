@@ -10,16 +10,56 @@ body{
     font-family:"Doto", serif;
 }
 
+header{
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color:#006a4e ;
+}
+.header{
+    
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    border-radius: 10px;  
+}
+
+
+.header nav ul {
+    grid-template-columns: repeat(5,50px) ;
+    grid-row: 1fr;
+    column-gap: 10px;
+    display: grid;
+    justify-content: center; 
+    /* align-items: center;  */
+    /* height: 30px; 
+    margin-bottom: 5px;
+    padding: 0px; */
+}
+.header nav ul li{
+    grid-row: 1/2;
+    list-style: none;
+    color: beige;
+}
+
+/* 
 .header{
     background-color: #006a4e;
     color: black;
     position: sticky;
     top: 0; 
-    height: 50px;
-    padding: 10px;
-    padding-bottom:30px ;
+    height: 40px;
+    /* padding: 10px;
+    padding-bottom:20x ;
+    padding-top: 20px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    
+    text-align: center;
+    justify-content: center;
 }
 
 .header h1{
@@ -29,15 +69,15 @@ body{
 
 .header nav{
     
-    padding: 0 10px;
+    padding: 0 ;
     
 }
 
 .header nav ul {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Ensure the container takes the full height */
+    justify-content: center; /* Center horizontally 
+    align-items: center; /* Center vertically 
+    height: 100%; /* Ensure the container takes the full height 
 }
 
 .header li {
@@ -48,7 +88,7 @@ body{
     padding: 0 15px;
     font-size: 19px;
     color: beige;
-}
+} */
 
 #PixelArt{
     display: flex;
