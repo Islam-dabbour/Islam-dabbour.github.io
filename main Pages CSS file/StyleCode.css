@@ -20,6 +20,7 @@ main{
     background-color: rgb(255, 255, 255);
     justify-content: center;
 }
+
 #Intro{
     grid-row: 2 / 4; 
     border-radius: 10px;
